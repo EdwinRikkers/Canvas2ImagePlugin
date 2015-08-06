@@ -24,7 +24,7 @@
     self.callbackId = command.callbackId;
 	NSData* imageData = [NSData dataFromBase64String:[command.arguments objectAtIndex:0]];
 	
-	UIImage* image = [[[UIImage alloc] initWithData:imageData]];	
+	UIImage* image = [[UIImage alloc] initWithData:imageData];	
 	UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
 	
 }
@@ -47,11 +47,5 @@
 		[self.webView stringByEvaluatingJavaScriptFromString:[result toSuccessCallbackString: self.callbackId]];
     }
 }
-
-- (void)dealloc
-{	
-    [super dealloc];
-}
-
 
 @end
