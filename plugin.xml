@@ -29,9 +29,7 @@
         </config-file>
         
         <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
-            <array>
-                <string>This app will only save pictures to your Photo's you choose.</string>
-            </array>
+            <string>This app will only save pictures to your Photo's you choose.</string>
         </config-file>
 
         <header-file src="src/ios/Canvas2ImagePlugin.h" />
