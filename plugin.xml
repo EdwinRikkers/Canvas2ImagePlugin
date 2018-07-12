@@ -31,6 +31,10 @@
         <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
             <string>Gekozen foto’s worden alleen gedownload naar de filmrol.</string>
         </config-file>
+        
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
+            <string>Gekozen foto’s worden alleen gedownload naar de filmrol.</string>
+        </config-file>
 
         <header-file src="src/ios/Canvas2ImagePlugin.h" />
 
